@@ -146,7 +146,7 @@ body {
 /* Services Section */
 .service-box img {
     width: 100%; /* Full width of the container */
-    height: 400px; /* Double the height (previously 200px) */
+    height: 600px; /* Double the height (previously 200px) */
     object-fit: cover; /* Ensures images cover the area uniformly */
     border-radius: 8px; /* Rounded corners */
 }
