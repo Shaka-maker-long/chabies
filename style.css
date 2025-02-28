@@ -94,7 +94,7 @@ body {
 }
 
 .info-box {
-    flex: 1 1 calc(33.33% - 40px); /* 3 boxes per row on desktop */
+    flex: 0 0 calc(33.33% - 40px); /* Force 3 boxes per row on desktop */
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
