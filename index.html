@@ -137,10 +137,10 @@
         <div class="container text-center">
             <h2 class="section-title">Contact Us</h2>
             <button class="btn" onclick="toggleContactForm()">Write a Message</button>
-            <form id="contact-form" class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqaerpyo" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
