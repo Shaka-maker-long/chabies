@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chabies Security Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        body {
+            padding-top: 150px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .contact-form {
+            display: none;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 3em;
+            color: white;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleContactForm() {
+            var form = document.getElementById('contact-form');
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <img src="logo.jpeg" alt="Chabies Security Services Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="container text-center">
+            <h1>Chabies Security Services</h1>
+            <h2>Your Security, Our Commitment</h2>
+            <p>Expert security solutions tailored to your needs.</p>
+        </div>
+    </section>
+
+    <section id="info" class="info">
+        <div class="container info-grid">
+            <div class="info-box">
+                <h2 class="section-title">About Us</h2>
+                <p>Chabies Security Services provides exceptional security solutions with highly trained professionals dedicated to ensuring your safety and peace of mind. We have been proudly serving our clients with integrity and excellence.</p>
+            </div>
+            <div class="info-box">
+                <h2 class="section-title">Our Vision</h2>
+                <p>To be a leading security services provider known for reliability, professionalism, and innovation in safeguarding our clients' assets and well-being.</p>
+            </div>
+            <div class="info-box">
+                <h2 class="section-title">Our Mission</h2>
+                <p>To deliver exceptional security services through a commitment to excellence, continuous training, and understanding the unique needs of each client.</p>
+            </div>
+        </div>
+    </section>  
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title text-center">OUR SERVICES</h2>
+            <div class="service-grid">
+                <div class="service-box">
+                    
+                    <h3 class="service-title">Arlarms</h3>
+                    <img src="alarms.png"Arlarms">
+                    <p class="service-text">State-of-the-art alarm systems with 24/7 monitoring to detect and respond to any security breaches.</p>    
+                    
+                </div>
+                <div class="service-box">
+                    <h3 class="service-title">Armed Response</h3>
+                    <img src="armed-response.jpg" alt="Armed Response">
+                    <p class="service-text">Fast and effective armed response teams to handle security threats and emergencies promptly.</p>
+                </div>
+                <div class="service-box">
+                    <h3 class="service-title">CCTV</h3>
+                    <img src="cctv.png" alt="CCTV">
+                    
+                    <p class="service-text">Advanced surveillance systems providing real-time monitoring and recording to enhance security.</p>
+                </div>
+                <div class="service-box">
+                    <h3 class="service-title">Guarding and Patrol</h3>
+                    <img src="guarding.jpg" alt="Guarding and Patrol">
+                    <p class="service-text">Highly trained security personnel providing patrol and monitoring services to ensure the safety of your premises.</p>
+                   
+                </div>                
+                <div class="service-box">
+                    <h3 class="service-title">K9 Unit</h3>
+                    <img src="k9.jpg" alt="K9 Unit">
+                    <p class="service-text">Highly trained security dogs and handlers for specialized security operations and threat detection.</p>
+                </div>   
+                         
+
+
+
+
+
+                <div class="service-box">
+                    <h3 class="service-title">Special Events</h3>
+                    <img src="event.jpg" alt="Special Events">
+                    <p class="service-text">Reliable security solutions for special events, ensuring crowd control, VIP protection, and overall event safety.</p>
+                   
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <button class="btn" onclick="toggleContactForm()">Write a Message</button>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            
+            <ul class="footer-details">
+                <li>Contact Number: 014 715 3115</li>
+                <br>
+                <li>Mobile / WhatsApp: 0609100244</li>
+                <br>
+                <li>Email: Info.chabies@gmail.com</li>
+                <br>
+                <li>Location: stand 9605 ext 10 modimolle, Nylstroom, South africa, 0510</li>
+            </ul>
+            <p class="footer-text">&copy; 2016 Chabies Security Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
