@@ -75,20 +75,33 @@ body {
 }
 
 .info-grid {
-    display: block; /* Stack containers vertically */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between containers */
+    justify-content: center; /* Center the containers */
 }
 
 .info-box {
-    width: 100%; /* Full width */
+    flex: 1 1 calc(33.33% - 40px); /* 3 boxes per row on desktop */
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px; /* Space between containers */
 }
 
-/* Remove responsive adjustments (not needed for vertical layout) */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .info-box {
+        flex: 1 1 calc(50% - 20px); /* 2 boxes per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        flex: 1 1 100%; /* 1 box per row on mobile */
+    }
+}
 /* Services Section */
 .services {
     padding: 50px 0;
