@@ -68,6 +68,7 @@ body {
     margin-top: 10px;
 }
 
+
 /* Info Section */
 .info {
     padding: 50px 0;
@@ -76,12 +77,12 @@ body {
 .info-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    gap: 20px; /* Space between containers */
+    justify-content: center; /* Center the containers */
 }
 
 .info-box {
-    flex: 1 1 calc(33.33% - 40px);
+    flex: 1 1 calc(33.33% - 40px); /* 3 boxes per row on desktop */
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
@@ -89,15 +90,10 @@ body {
     text-align: center;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .info-box {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .info-box {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Stack vertically on mobile */
     }
 }
 
